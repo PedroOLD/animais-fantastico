@@ -24,7 +24,7 @@ html.textomaior{
     grid-column: 3 / 5;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color: rgb(160, 84, 84);
+    background-color: #fb5;
 }
 .menu ul {
     display: flex;
