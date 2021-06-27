@@ -1,33 +1,33 @@
 function activeTabimg () {
-    const tabMenu = document.querySelectorAll('.js-tabmenu li');
-    const tabContent = document.querySelectorAll('.js-tabcontent section');
-    tabContent[0].classList.add('ativo')
+    const tabMenu = document.querySelectorAll('[data-tab="menu"] li'); // array li da img dos animais
+    const tabContent = document.querySelectorAll('[data-tab="content"] section'); // array a section de descrição
+    tabContent[0].classList.add('ativo') // primeiro item da section fica ativo na tela
 
-    if (tabMenu.length && tabMenu.length){
-        function activeTab(index){
+    if (tabMenu.length && tabContent.length){ // verificar se exitir index - True
+        function activeTab(index, datasetAtribute){
 
-            tabContent.forEach((item) => {
-                item.classList.remove('ativo')
+            tabContent.forEach((item) => { 
+                item.classList.remove('ativo'); // remove a class ativo e o dataset de todas as sections
             })
 
-            tabContent[index].classList.add('ativo');
-            console.log(index);
+            tabContent[index].classList.add('ativo', tabContent[index].dataset.anime); // adiciona a class ativo e dataset no index   
         }
 
 
         tabMenu.forEach((itemMenu, index) => {
-            itemMenu.addEventListener('click', () => {
-                activeTab(index)
+            itemMenu.addEventListener('click', () => { // add evento de click
+                activeTab(index) // passa o index do item clicado
             });
         })
-    }
+    } 
 }
 
 
 
 
-function initAccort () {
-    const accortLista = document.querySelectorAll('.js-accort dt');
+function initAccort () { // animaton acoordion
+    const accortLista = document.querySelectorAll('[data-anime="accordion"] dt');
+    console.log(accortLista)
     const ativoClass = 'ativa';
 
     if(accortLista.length){
@@ -46,21 +46,21 @@ function initAccort () {
 }
 
 
-function initScroll() {
-    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+function initScrollClick() { // animation scroll smooth
+    const linksInternos = document.querySelectorAll('[data-tab="menu"] a[href^="#"]'); //array links 
 
     function scrollToSection (event) {
-        event.preventDefault();
-        const href = event.currentTarget.getAttribute('href');
-        const section = document.querySelector(href);
-
-        section.scrollIntoView({
+        event.preventDefault(); // para o evento
+        const href = event.currentTarget.getAttribute('href'); // seleciona o conteudo dentro de href #link
+        const section = document.querySelector(href); // seleciona a section de com o link #link - como se fosse um id  
+        
+        section.scrollIntoView({ // scroll suave
             behavior: 'smooth',
             block: 'start',
         })
 
 
-        // forma alternativa
+        // forma alternativa de fazer scroll suave
         // const topSection = section.offsetTop;
         // window.scrollTo({
         //     top: topSection,
@@ -75,7 +75,7 @@ function initScroll() {
 
 
 function initScrollAnimation () {
-    const sections = document.querySelectorAll('.js-scroll');
+    const sections = document.querySelectorAll('[data-anime="scroll"]');
     const windowHeith = window.innerHeight *0.6;
 
     if (sections.length){
@@ -96,7 +96,7 @@ function initScrollAnimation () {
 
 activeTabimg();
 initAccort();
-initScroll();
+initScrollClick();
 initScrollAnimation();
 
 

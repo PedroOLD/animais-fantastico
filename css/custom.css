@@ -11,6 +11,7 @@ ul{
     list-style: none;
 }
 body{
+    cursor: auto;
     background-color: #faf6ed;
     color: #222;
     -webkit-font-smoothing:antialiased ;
@@ -24,7 +25,7 @@ html.textomaior{
     grid-column: 3 / 5;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color: rgb(160, 84, 84);
+    background-color: #fb5;
 }
 .menu ul {
     display: flex;
@@ -68,7 +69,7 @@ html.textomaior{
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-bottom: 1rem;
-    color: #e54;
+    color: #fb5;
 }
 .animais h2::before {
     content: '';
@@ -207,17 +208,23 @@ html.textomaior{
     }
 }
 
-
-.js .js-tabcontent section{
+/*Animation scroll*/
+[data-tab="content"] section{
     display: none;
 }
 
-.js .js-tabcontent section.ativo{
+[data-tab="content"] section.ativo{
     display: block !important;
-    animation: show 1s forwards;
 }
 
-@keyframes show {
+[data-tab="content"] section.ativo.show-right{
+    animation: show-right 1s forwards;
+}
+[data-tab="content"] section.ativo.show-down{
+    animation: show-down 1s forwards;
+}
+
+@keyframes show-right {
     from {
         opacity: 0;
         transform: translate3d(-30px, 0, 0px);
@@ -228,20 +235,35 @@ html.textomaior{
     }
 }
 
+@keyframes show-down {
+    from {
+        opacity: 0;
+        transform: translate3d(0px, -30px, 0px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0px, 0, 0px);
+    }
+}
 
-.js .js-accort dd {
+/*Animation accprdion*/
+[data-anime="accordion"] dd {
     display: none;
 }
 
-.js .js-accort dt::after {
+[data-anime="accordion"] dt {
+    cursor: pointer;
+}
+
+[data-anime="accordion"] dt::after {
     content: '>';
     margin-left: 10px;
 }
-.js .js-accort dt.ativo::after {
-    content: '^';
+[data-anime="accordion"] dt.ativa::after {
+    content: 'v';
     margin-left: 10px;
 }
-.js .js-accort dd.ativo {
+[data-anime="accordion"] dd.ativa {
     display: block;
     animation: slideDown 1s forwards;
 }
@@ -256,13 +278,13 @@ html.textomaior{
     }
 }
 
-.js .js-scroll {
+[data-anime="scroll"] {
     opacity: 0;
     transform: translate3d(-30px, 0px, 0px);
     transition: .5s;
 }
 
-.js .js-scroll.ativo {
+[data-anime="scroll"].ativo {
     opacity: 1;
     transition: .5s;
     transform: translate3d(0px, 0px, 0px);
