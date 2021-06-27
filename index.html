@@ -4,181 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais fantasticos</title>
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     
 </head>
     <body>
-        <nav class="menu" data-tab="menu">
-            <ul>
-                <li><a href="#animais">Animais</a></li>
-                <li><a href="#faq"> FAQ</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/toggleAttribute">Link externo ►</a></li>
-            </ul>
-        </nav>
-        <section class="grid-section animais" data-anime="scroll" id="animais" > 
-            <h1 class="titulo">Animais fantasticos</h1>
-            <ul class="animais-lista js-tabmenu">
-                <li>
-                    <img src="./img/coruja.jpg" alt="">
-                </li>
+        <div class="grid-container">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#animais">Animais</a></li>
+                    <li><a href="#faq"> FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="login.html" data-modal="abrir">Logar</a></li>
+                </ul>
+            </nav>
+            <section class="grid-section animais" data-anime="scroll" id="animais" > 
+                <h1 class="titulo">Animais fantasticos</h1>
+                <ul class="animais-lista" data-tab="menu">
+                    <li>
+                        <img src="./img/coruja.jpg" alt="">
+                    </li>
 
-                <li>
-                    <img src="./img/gato.png" alt="">
-                </li>
+                    <li>
+                        <img src="./img/gato.png" alt="">
+                    </li>
 
-                <li>
-                    <img src="./img/leao.jpg" alt="">
-                </li>
+                    <li>
+                        <img src="./img/leao.jpg" alt="">
+                    </li>
 
-                <li>
-                    <img src="./img/raposa.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./img/raposa2.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./img/tigre.jpg" alt="">
-                </li>
-            </ul>
-            <div class="animais-descricao" data-tab="content">
-                <section data-anime="show-right">
-                    <h2>coruja</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
-                        laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
-                        dolore amet ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
-                        perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
-                        exercitationem itaque officiis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
-                        veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                </section>
-            
-                <section data-anime="show-down">
-                    <h2>Gato</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
-                        laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
-                        dolore amet ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
-                        perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
-                        exercitationem itaque officiis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
-                        veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                </section>
-            
-                <section data-anime="show-right">
-                    <h2>Leoa</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
-                        laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
-                        dolore amet ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
-                        perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
-                        exercitationem itaque officiis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
-                        veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                </section>
-            
-                <section data-anime="show-down">
-                    <h2>Raposa1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
-                        laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
-                        dolore amet ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
-                        perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
-                        exercitationem itaque officiis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
-                        veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                </section>
-            
-                <section data-anime="show-down">
-                    <h2>Raposa2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
-                        laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
-                        dolore amet ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
-                        perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
-                        exercitationem itaque officiis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
-                        veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                </section>
-            
-                <section data-anime="show-right">
-                    <h2>tigre</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
-                        laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
-                        dolore amet ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
-                        perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
-                        exercitationem itaque officiis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
-                        veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
-                        cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
-                </section>
+                    <li>
+                        <img src="./img/raposa.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/raposa2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/tigre.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="animais-descricao" data-tab="content">
+                    <section data-anime="show-right">
+                        <h2>coruja</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
+                            laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
+                            dolore amet ut?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
+                            perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
+                            exercitationem itaque officiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
+                            veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                    </section>
+                
+                    <section data-anime="show-down">
+                        <h2>Gato</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
+                            laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
+                            dolore amet ut?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
+                            perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
+                            exercitationem itaque officiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
+                            veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                    </section>
+                
+                    <section data-anime="show-right">
+                        <h2>Leoa</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
+                            laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
+                            dolore amet ut?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
+                            perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
+                            exercitationem itaque officiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
+                            veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
+                        </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
+                        </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                    </section>
+                
+                    <section data-anime="show-down">
+                        <h2>Raposa1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
+                            laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
+                            dolore amet ut?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
+                            perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
+                            exercitationem itaque officiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
+                            veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                    </section>
+                
+                    <section data-anime="show-down">
+                        <h2>Raposa2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
+                            laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
+                            dolore amet ut?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
+                            perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
+                            exercitationem itaque officiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
+                            veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
+                        </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!
+                        </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                    </section>
+                
+                    <section data-anime="show-right">
+                        <h2>tigre</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem saepe recusandae minima
+                            laudantium, alias similique consectetur magni distinctio, quo vitae. Fugit id, dolor quae at veritatis
+                            dolore amet ut?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eos laboriosam, tempora dolorum soluta
+                            perferendis quos molestiae beatae commodi quas temporibus, voluptate molestias ad excepturi rem
+                            exercitationem itaque officiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo ut nihil deserunt esse fuga aut, ea
+                            veritatis earum. Eligendi ducimus cupiditate expedita, hic amet magnam labore laborum consectetur iusto!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi pariatur velit vero beatae modi at
+                            cupiditate maiores ut dolorum, adipisci quasi mollitia consequatur nihil voluptate vitae illo dolore ex!</p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="grid-section faq" data-anime="scroll" id="faq">
+                <h1 class="titulo">Faq</h1>
+                <dl class="faq-lista" data-anime="accordion">
+                    <dt>Qual é a idade dos animais</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tempora atque corporis quidem maiores numquam quia libero, voluptate exercitationem quisquam ex doloremque laudantium omnis mollitia repellendus, eaque perspiciatis minus magnam.</dd>
+
+                    <dt>Eles são fantasticos ?</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus est deserunt dolorem? Nulla ad, odio minus adipisci soluta architecto voluptate fugiat a accusantium numquam illo omnis optio quae eaque.</dd>
+    
+                    <dt>Como proteger ?</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo accusantium aut odit porro sit blanditiis commodi ratione et asperiores vitae, ipsa eum odio saepe. Temporibus dicta nobis officia? Accusamus.</dd>
+                </dl>
+            </section>
+
+            <section class="grid-section contato" data-anime="scroll" id="contato">
+                <h1 class="titulo">Contato</h1>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.6266029867437!2d-43.243116670791274!3d-22.931569663943925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e101e52a107%3A0xe5b2be74ef669422!2sAv.%20Maracan%C3%A3%2C%201383%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020511-001!5e0!3m2!1spt-BR!2sbr!4v1592516759848!5m2!1spt-BR!2sbr" width="1400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <ul class="dados" >
+                    <li>contato@siteteste@gmail.com</li>
+                    <li>+55 (21) 99999-9999</li>
+                    <li>Rua do conde, nº 21</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+            </section>
+
+            <footer class="copy">
+                <p>Todos os direitos reservados.</p>
+            </footer>
+        </div>
+
+        <section class="modal-container" data-modal="container"> 
+            <div class="modal">
+                <button class="fechar" data-modal="fechar">X</button>
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="text" for="email" id="email">
+                    <label for="password">Senha</label>
+                    <input type="password" for="password" id="password">
+
+                    <button type="submit">Entrar</button>
+                </form>
             </div>
         </section>
-
-        <section class="grid-section faq" data-anime="scroll" id="faq">
-            <h1 class="titulo">Faq</h1>
-            <dl class="faq-lista" data-anime="accordion">
-                <dt>Qual é a idade dos animais</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tempora atque corporis quidem maiores numquam quia libero, voluptate exercitationem quisquam ex doloremque laudantium omnis mollitia repellendus, eaque perspiciatis minus magnam.</dd>
-
-                <dt>Eles são fantasticos ?</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus est deserunt dolorem? Nulla ad, odio minus adipisci soluta architecto voluptate fugiat a accusantium numquam illo omnis optio quae eaque.</dd>
- 
-                <dt>Como proteger ?</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo accusantium aut odit porro sit blanditiis commodi ratione et asperiores vitae, ipsa eum odio saepe. Temporibus dicta nobis officia? Accusamus.</dd>
-            </dl>
-        </section>
-
-        <section class="grid-section contato" data-anime="scroll" id="contato">
-            <h1 class="titulo">Contato</h1>
-
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.6266029867437!2d-43.243116670791274!3d-22.931569663943925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e101e52a107%3A0xe5b2be74ef669422!2sAv.%20Maracan%C3%A3%2C%201383%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020511-001!5e0!3m2!1spt-BR!2sbr!4v1592516759848!5m2!1spt-BR!2sbr" width="1400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-
-            <ul class="dados" >
-                <li>contato@siteteste@gmail.com</li>
-                <li>+55 (21) 99999-9999</li>
-                <li>Rua do conde, nº 21</li>
-                <li>Rio de Janeiro - RJ</li>
-            </ul>
-        </section>
-
-        <footer class="copy">
-            <p>Todos os direitos reservados.</p>
-        </footer>
-        <script src="./js/index.js"></script>
-        <script src="./js/script.js"></script>
+        <script type="module" src="./js/script.js"></script>
     </body>
 </html> 

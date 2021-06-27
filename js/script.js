@@ -1,14 +1,13 @@
-// Adicione um atributo data-anime="show-down" e
-// data-anime="show-right" a todos as section's
-// com descricão dos animais.
-// Utilizando estes atributos, adicione a classe
-// show-down ou show-right a sua respectiva section
-// assim que a mesma aparecer na tela (animacao tab)
-// No CSS faça com que show-down anime de cima para baixo
-// e show-right continue com a mesma animação da esquerda
-// para a direita
-// Substitua todas as classes js- por data atributes.
+import initTabNavImg from './modules/tabnav.js';
+import initScrollSmooth from './modules/scroll-smooth.js'; 
+import initAccordion from './modules/accordion.js';
+import initScrollAnimation from './modules/scroll-animation.js';
+import initModal from './modules/modal.js';
+import initToolTip from './modules/tooltip.js'
 
-
-const descriptionAnimals = document.querySelectorAll('.animais-descricao > section');
-
+initScrollSmooth(); // animation scroll suave
+initTabNavImg(); // animation click img animal - content 
+initAccordion(); // animation acordion section Faq
+initScrollAnimation(); // animation sction opacity 1
+initModal(); // open e close modal
+initToolTip(); // animation tooltip
