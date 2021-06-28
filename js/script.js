@@ -3,7 +3,7 @@ import initScrollSmooth from './modules/scroll-smooth.js';
 import initAccordion from './modules/accordion.js';
 import initScrollAnimation from './modules/scroll-animation.js';
 import initModal from './modules/modal.js';
-import initToolTip from './modules/tooltip.js'
+import initToolTip from './modules/tooltip.js';
 
 initScrollSmooth(); // animation scroll suave
 initTabNavImg(); // animation click img animal - content 
