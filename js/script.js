@@ -4,10 +4,12 @@ import initAccordion from './modules/accordion.js';
 import initScrollAnimation from './modules/scroll-animation.js';
 import initModal from './modules/modal.js';
 import initToolTip from './modules/tooltip.js';
+import initDropdown from './modules/dropdownmenu.js';
 
 initScrollSmooth(); // animation scroll suave
 initTabNavImg(); // animation click img animal - content 
 initAccordion(); // animation acordion section Faq
 initScrollAnimation(); // animation sction opacity 1
 initModal(); // open e close modal
-initToolTip(); // animation tooltip
+initToolTip(); // animation 
+initDropdown(); // drop down menu
